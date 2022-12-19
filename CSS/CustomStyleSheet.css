@@ -1,0 +1,126 @@
+﻿.footerlinks {
+    color: whitesmoke;
+    text-decoration: none !important;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+    .footerlinks:hover {
+        color: aquamarine;
+    }
+
+#footer1 {
+    background: #762b00;
+    color: whitesmoke;
+}
+
+#footer2 {
+    background: #BD4127;
+    color: whitesmoke;
+}
+
+body {
+    background-color: lightpink;
+}
+
+p {
+    font-size: 18pt;
+}
+
+header {
+    background-color: #BD4127;
+    text-align: center;
+    padding: 40px;
+    text-decoration: dashed;
+}
+
+
+.body-text {
+    margin-right: 150px;
+    font-size: 18px;
+}
+
+.main {
+    width: 85%;
+    font-size: 20px;
+    text-align: center;
+}
+
+    .main img {
+        float: left;
+    }
+
+/*.topNav {
+    overflow: hidden;
+    background-color: lightpink;
+    margin: 10px;
+    padding-left: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+    .topNav a:link {
+        color: rgb(211, 166, 82);
+        background-color: rgb(144, 83, 154);
+    }
+
+    .topNav a:visited {
+        color: rgb(63, 66, 107);
+    }
+
+    .topNav a:hover {
+        background-color: rgb(199, 60, 60);
+        color: rgb(49, 17, 71);
+    }
+
+    .topNav a:active {
+        color: rgb(149, 174, 191);
+        background-color: black;
+    }
+
+    .topNav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border-style: ridge;
+        border-radius: 10px;
+    }
+*/
+.container {
+    position: relative;
+    width: auto;
+    max-width: 250px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    background: lightpink width: 100%;
+    opacity: 0.5;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.container:hover .overlay {
+    opacity: 1.5;
+}
+
+.footer {
+    bottom: 0px;
+    clear: both;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    background-color: #BD4127;
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: underline;
+    letter-spacing: 8px;
+}
+
+    .footer a:hover {
+        background-color: whitesmoke;
+        color: whitesmoke;
+    }

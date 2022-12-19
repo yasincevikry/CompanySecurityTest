@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="CompanySecurityTest.Site1" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <%--Custom CSS (Made by Us)--%>
+    <link href="CSS/CustomStyleSheet.css" rel="stylesheet" />
+    <%--Bootstrap CSS--%>
+    <link href="Bootstrap/Css/bootstrap.min.css" rel="stylesheet" />
+    <%--Datatable CSS--%>
+    <link href="Datatables/Css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%--Fontawesome CSS--%>
+    <link href="Fontawesome/css/all.css" rel="stylesheet" />
+
+    <%--Jquery JS--%>
+    <script src="Bootstrap/Js/jquery-3.3.1.slim.min.js"></script>
+    <%--Popper JS--%>
+    <script src="Bootstrap/Js/popper.min.js"></script>
+    <%--Bootstrap JS--%>
+    <script src="Bootstrap/Js/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color: whitesmoke">
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="Images/tycyber.png" width="50" height="40" />
+                    Mitre Attack
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Home.aspx">Home</a>
+                        </li>
+                        
+                        <li class="nav-item active">
+                            <a class="nav-link" href="DesignerInfo.aspx">Designer Info</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="MitreAttackInfo.aspx">Mitre Attack Info</a>
+                        </li>
+                    </ul>
+
+                     <ul class="navbar-nav">
+                         <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="btnCompanyProfile" runat="server" OnClick="btnCompanyProfile_Click" Visible="False">Profile</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="btnMitreAttackTest" runat="server" OnClick="btnMitreAttackTest_Click" Visible="False">Mitre Attack Test</asp:LinkButton>
+                        </li>
+                        
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="btnLogin" runat="server" OnClick="btnLogin_Click">Login</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="btnSignup" runat="server" OnClick="btnSignup_Click">Sign Up</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="btnWelcome" runat="server" OnClick="btnWelcome_Click" Visible="False">Welcome Company</asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="btnLogout" runat="server" OnClick="btnLogout_Click" Visible="False">Logout</asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Main Content Placeholder -->
+        <div>
+            <asp:ContentPlaceHolder ID="MainContentPlaceholder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Main Content Placeholder -->
+        <!-- Footer -->
+        <footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+
+                        <p>
+                            <asp:LinkButton class="footerlinks" href="https://www.linkedin.com/in/yasincevikry/" ID="btnYasinLinkedin" runat="server">Yasin LinkedIn</asp:LinkButton>
+                            &nbsp;
+                           
+                            <asp:LinkButton class="footerlinks" href="https://github.com/yasincevikry" ID="btnYasinGithub" runat="server">Yasin GitHub</asp:LinkButton>
+                            &nbsp;
+                           
+                            <asp:LinkButton class="footerlinks" href="https://www.linkedin.com/in/ttayfunylmz/" ID="btnTayfunLinkedin" runat="server">Tayfun LinkedIn</asp:LinkButton>
+                            &nbsp;
+                           
+                            <asp:LinkButton class="footerlinks" href="https://github.com/ttayfunylmz" ID="btnTayfunGithub" runat="server">Tayfun GitHub</asp:LinkButton>
+                            &nbsp;
+                           
+                            <asp:LinkButton class="footerlinks" href="https://www.youtube.com/@skinnydev" ID="btnSkinnyDev" runat="server">SkinnyDev Youtube</asp:LinkButton>
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color: whitesmoke">&copy Made by Yasin Çevik and Tevfik Tayfun Yılmaz. <a class="footerlinks" href="#" target="_blank">Company Security Test</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- ./Footer -->
+
+
+    </form>
+</body>
+</html>
